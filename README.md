@@ -2,7 +2,12 @@
 <img align="top" width=175 src="Documentation/Logo/Marlin%20Logo%20GitHub.png" />
  Additional documentation can be found in [The Marlin Wiki](https://github.com/MarlinFirmware/Marlin/wiki).
 
-## Release Candidate -- Marlin 1.1.0-RC6 - 24 April 2016
+<img align="top" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
+
+Additional documentation can be found at [The Marlin Documentation Project](https://www.marlinfw.org/).
+Please test this firmware and inform us if it misbehaves in any way, volunteers are standing by!
+
+## Release Candidate -- Marlin 1.1.0-RC7 - 31 July 2016
 
 __Not for production use – use with caution!__
 
@@ -13,14 +18,35 @@ You'll always find the latest Release Candidate in the ["RC" branch](https://git
 Future development (Marlin 1.2 and beyond) takes place in the [MarlinDev repository](https://github.com/MarlinFirmware/MarlinDev/).
 
 ## Recent Changes
-- RCBugFix
-  - Throw error if compiling with older versions (<1.60) of Arduino due to serious problems with outdated Arduino versions
-  - Please upgrade your IDE at least to Arduino 1.6.0. Thanks.
+- RC7 - 31 Jul 2016
+  - Add Print Job Timer and Print Counter (`PRINTCOUNTER`)
+  - New `M600` Filament Change (`FILAMENT_CHANGE_FEATURE`)
+  - New `G12` Nozzle Clean (`NOZZLE_CLEAN_FEATURE`)
+  - New `G27` Nozzle Park (`NOZZLE_PARK_FEATURE`)
+  - Add support for `COREYZ`
+  - Add a new Advance Extrusion algorithm (`LIN_ADVANCE`)
+  - Add support for inches, Fahrenheit, Kelvin units (`INCH_MODE_SUPPORT`, `TEMPERATURE_UNITS_SUPPORT`)
+  - Better handling of `G92` shifting of the coordinate space
+  - Add Greek and Croatian languages
+  - Improve the Manual (Mesh) Bed Leveling user interface
+  - Add support for more boards, controllers, and probes:
+    - Vellemann K8400 (`BOARD_K8400`)
+    - RigidBot V2 (`BOARD_RIGIDBOARD_V2`)
+    - Cartesio UI (`BOARD_CNCONTROLS_12`)
+    - BLTouch probe sensor (`BLTOUCH`)
+    - Viki 2 with RAMPS and MKS boards
+  - Improve support for `DELTA` and other kinematics
+  - Improve thermal management, add `WATCH_BED_TEMP_PERIOD`
+  - Better handling of toolchange, multiple tools
+  - Add support for two X steppers `X_DUAL_STEPPER_DRIVERS`
+  - Add support for `SINGLENOZZLE`, `MIXING_EXTRUDER`, and `SWITCHING_EXTRUDER`
+  - Simplified probe configuration, allow usage without bed leveling
+  - And much more… See the [1.1.0-RC7 Change Log](https://github.com/MarlinFirmware/Marlin/releases/tag/1.1.0-RC7) for the complete list of changes.
 
-- RC6 - 23 Apr 2016
-  - Completed support for CoreXY / CoreXZ in planner
-  - Changes to positioning behavior
-  - Various issues fixed. More details pending.
+- RC6 - 24 Apr 2016
+  - Marlin now requires Arduino version 1.6.0 or later
+  - Completed support for CoreXY / CoreXZ
+  - See the [1.1.0-RC6 Change Log](https://github.com/MarlinFirmware/Marlin/releases/tag/1.1.0-RC6) for all the changes.
 
 - RC5 - 01 Apr 2016
   - Warn if compiling with older versions (<1.50) of Arduino
