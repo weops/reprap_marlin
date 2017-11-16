@@ -868,6 +868,7 @@
       //#define MIN_PROBE_Y (max(Y_MIN_POS, Y_MIN_POS + Y_PROBE_OFFSET_FROM_EXTRUDER))
       //#define MAX_PROBE_Y (max(Y_MAX_POS, Y_MAX_POS + Y_PROBE_OFFSET_FROM_EXTRUDER))
     #endif
+
   #endif
 
   // Stepper pulse duration, in cycles
