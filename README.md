@@ -1,4 +1,6 @@
 # Marlin 3D Printer Firmware
+<img align="top" width=175 src="Documentation/Logo/Marlin%20Logo%20GitHub.png" />
+ Additional documentation can be found in [The Marlin Wiki](https://github.com/MarlinFirmware/Marlin/wiki).
 
 <img align="top" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
 
@@ -11,7 +13,9 @@ __Not for production use – use with caution!__
 
 You can download earlier versions of Marlin on the [Releases page](https://github.com/MarlinFirmware/Marlin/releases). (The latest "stable" release of Marlin is 1.0.2-1.)
 
-The latest Release Candidate lives in the ["RC" branch](https://github.com/MarlinFirmware/Marlin/tree/RC). Bugs that we find in the current Release Candidate are patched in the ["RCBugFix" branch](https://github.com/MarlinFirmware/Marlin/tree/RCBugFix), so during beta testing this is where you can always find the latest code on its way towards release.
+You'll always find the latest Release Candidate in the ["RC" branch](https://github.com/MarlinFirmware/Marlin/tree/RC). Bugs that we find in the current Release Candidate are patched in the ["RCBugFix" branch](https://github.com/MarlinFirmware/Marlin/tree/RC), so during beta testing this is where you can always find the latest code on its way towards release.
+
+Future development (Marlin 1.2 and beyond) takes place in the [MarlinDev repository](https://github.com/MarlinFirmware/MarlinDev/).
 
 ## Recent Changes
 - RC8 - 06 Dec 2016
@@ -76,7 +80,7 @@ The latest Release Candidate lives in the ["RC" branch](https://github.com/Marli
   - Rename FILAMENT_SENSOR to FILAMENT_WIDTH_SENSOR
   - Fix SD card bugs
   - and a lot more
-  - See the [1.1.0-RC5 Change Log](https://github.com/MarlinFirmware/Marlin/releases/tag/1.1.0-RC5) for more!
+  - see https://github.com/MarlinFirmware/Marlin/releases/tag/1.1.0-RC5 for details
 
 - RC4 - 24 Mar 2016
   - Many lingering bugs and nagging issues addressed
