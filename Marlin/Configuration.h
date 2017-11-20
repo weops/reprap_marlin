@@ -542,7 +542,7 @@
 #define HOBBED_BOLD_CIRC (M_PI * HOBBED_BOLT_DIAM)
 #define WADE_E_STEPS (NEMA17_MOTOR_STEPS * WADE_GEAR_RATIO / HOBBED_BOLD_CIRC)
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,1500,730.72}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,1511.34,730.72}
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { XY_STEPS, XY_STEPS, Z_STEPS, WADE_E_STEPS }
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 500 }
 
@@ -699,9 +699,9 @@
  *    (0,0)
  */
 
-#define X_PROBE_OFFSET_FROM_EXTRUDER 5      // X offset: -left  +right  [of the nozzle]
-#define Y_PROBE_OFFSET_FROM_EXTRUDER -63    // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -19.9  // Z offset: -below +above  [the nozzle]
+#define X_PROBE_OFFSET_FROM_EXTRUDER 5    // X offset: -left  +right  [of the nozzle]
+#define Y_PROBE_OFFSET_FROM_EXTRUDER -64    // Y offset: -front +behind [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -20.0  // Z offset: -below +above  [the nozzle]
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 6000
@@ -736,7 +736,7 @@
 #define Z_PROBE_OFFSET_RANGE_MAX 20
 
 // Enable the M48 repeatability test to test probe accuracy
-//#define Z_MIN_PROBE_REPEATABILITY_TEST
+#define Z_MIN_PROBE_REPEATABILITY_TEST
 
 // For Inverting Stepper Enable Pins (Active Low) use 0, Non Inverting (Active High) use 1
 // :{ 0:'Low', 1:'High' }
@@ -897,7 +897,7 @@
   #define LEFT_PROBE_BED_POSITION 15
   #define RIGHT_PROBE_BED_POSITION (X_MAX_POS-15)
   #define FRONT_PROBE_BED_POSITION 30
-  #define BACK_PROBE_BED_POSITION (Y_MAX_POS-30)
+  #define BACK_PROBE_BED_POSITION (Y_MAX_POS + Y_PROBE_OFFSET_FROM_EXTRUDER)
 
   // The Z probe minimum outer margin (to validate G29 parameters).
   #define MIN_PROBE_EDGE 10
